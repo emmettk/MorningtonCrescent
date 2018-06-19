@@ -1,0 +1,93 @@
+# Test Mornington Crescent Program to play with accumulator
+# Emmett Krupczak
+# 12 Oct 2017
+
+# Don't allow consecutive visits to same station
+
+## Return "Camden Town"
+# Take Northern Line to Camden Town
+# Take Northern Line to Bank
+# Take District Line to Hammersmith
+# Take Circle Line to Moorgate
+# Take Northern Line to Old Street
+# Take Northern Line to Moorgate
+# Take Northern Line to Mornington Crescent
+
+## Return "Barkingside"
+# Take Northern Line to Bank
+# Take Central Line to Barkingside
+# Take Central Line to Bank
+# Take Central Line to St. Paul's
+# Take Central Line to Bank
+# Take Northern Line to Mornington Crescent
+
+## Return "7"
+# Take Northern Line to Euston
+# Take Victoria Line to Seven Sisters
+# Take Victoria Line to Euston
+# Take Northern Line to Warren Street
+# Take Northern Line to Euston
+# Take Northern Line to Mornington Crescent
+
+## Return "0"
+# Take Northern Line to Euston
+# Take Victoria Line to Seven Sisters
+# Take Victoria Line to King's Cross St. Pancras
+# Take Metropolitan Line to Farringdon
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Metropolitan Line to Preston Road
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Victoria Line to Seven Sisters
+# Take Victoria Line to King's Cross St. Pancras
+# Take Metropolitan Line to Farringdon
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Metropolitan Line to Preston Road
+# ## Now we have the '0', we just need to get it home
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Northern Line to Old Street
+# Take Northern Line to King's Cross St. Pancras
+# ## We make a superfluous stop at Angel just to demonstrate that we have the integer 0
+# ## which is a special character to Angel
+# Take Northern Line to Angel
+# Take Northern Line to Mornington Crescent 
+
+## A simple loop
+# Store 7
+Take Northern Line to Euston
+Take Victoria Line to Seven Sisters
+# Subtract 1 
+Take Northern Line to Embankment
+Take District Line to Temple
+Take District Line to Embankment
+Take Northern Line to Angel
+Take Northern Line to Mornington Crescent
+
+
+
+
+## Return 0, integer
+# Take Northern Line to Euston
+# Take Victoria Line to Seven Sisters
+# Take Victoria Line to King's Cross St. Pancras
+# Take Metropolitan Line to Farringdon
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Metropolitan Line to Preston Road
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Victoria Line to Seven Sisters
+# Take Victoria Line to King's Cross St. Pancras
+# Take Metropolitan Line to Farringdon
+# Take Metropolitan Line to King's Cross St. Pancras
+# Take Metropolitan Line to Preston Road
+# ##Now we have the '0' as a string, we need to convert it to an integer 
+# ## To do this we'll get to Parson's Green on District Line
+# Take Metropolitan Line to Moorgate
+# Take Northern Line to Old Street
+# Take Northern Line to Moorgate
+# Take Northern Line to Embankment
+# Take District Line to Tower Hill
+# Take District Line to Embankment
+# Take District Line to Parsons Green
+# Take District Line to Embankment
+# Take Northern Line to Waterloo
+# Take Northern Line to Embankment
+# Take Northern Line to Mornington Crescent 
